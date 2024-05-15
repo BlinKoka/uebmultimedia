@@ -76,11 +76,16 @@ header{
 }
 .search-box{
     position: absolute;
-    top: 100%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%);
     background: var(--bg-color);
     width: 100%;
+}
+.search-box.active{
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s all linear;
 }
 .search-box input{
     padding: 20px;
@@ -107,7 +112,7 @@ body{
     gap: 1.5rem;
 }
 .home-text {
-    padding-left: 10%; 
+    padding-left: 15%; 
     text-align: left; 
 }
 .home-text h1 {
@@ -120,7 +125,7 @@ body{
 .home-text p {
     font-size: 0.938rem;
     color: var(--bg-color);
-    margin-bottom: 1.4rem; 
+    margin-bottom: 1.8rem; 
 }
 
 .btn {
