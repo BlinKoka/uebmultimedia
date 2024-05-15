@@ -19,9 +19,6 @@
 img{
     width: 100% ;
 }
-body{
-    color: var(--text-color);
-}
 header{
     position: fixed;
     width: 100%;
@@ -97,3 +94,61 @@ header{
     font-size: 1rem;
     font-weight: 500;
 }
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text {
+    padding-left: 10%; 
+    text-align: left; 
+}
+.home-text h1 {
+    font-size: 3.4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.home-text p {
+    font-size: 0.938rem;
+    color: var(--bg-color);
+    margin-bottom: 1.4rem; 
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-color: var(--main-color); /* Use background-color instead of background-position */
+    color: var(--bg-color);
+    font-weight: 500;
+    text-decoration: none; /* Ensure button text is not underlined */
+    display: inline-block; /* Make button behave as an inline block */
+    margin-top: 1.5rem; /* Add top margin to create space between button and paragraphs */
+}
+
+.btn:hover {
+    background-color: #8a6f4d; /* Change background color on hover */
+}
+
+.home-img {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.home-img img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
