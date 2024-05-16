@@ -151,6 +151,7 @@ body{
 .home-img img {
     width: 100%;
     max-width: 300px;
+    padding-right: 25px;
     display: block;
     margin: 0 auto;
     border-radius: 8px;
