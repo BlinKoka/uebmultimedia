@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="about.css">
     <link rel="icon" href="img/icon1.png">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <header>
@@ -28,9 +30,13 @@
             <input type="search" name="" id="" placeholder="Search Here">
         </div>
     </header>
-    <div class="about-img">
-        <img src="img/a1.jpg" alt="">
+    <div class="about-slider">
+        <div><img src="img/a1.jpg" alt=""></div>
+        <div><img src="img/a2.jpg" alt=""></div>
+        <div><img src="img/a3.jpg" alt=""></div>
+        <!-- Shtoni më shumë imazhe sipas nevojës -->
     </div>
+    
     <div class="about-text">
         <h2>Our History</h2>
         <p>Our story at B-Coffee began over a decade ago, rooted in a shared passion for exceptional coffee. What started as a humble coffee roasting venture in a small garage has evolved into a beloved brand known for its commitment to quality and innovation.</p>
@@ -38,6 +44,17 @@
         <p>Today, B-Coffee stands as a testament to our enduring journey, marked by a deep-seated love for coffee and a desire to share it with others. Join us as we continue to write the next chapters of our story, one exceptional brew at a time.        </p>
         <a href="#" class="btn">Learn More</a>
     </div>
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.about-slider').slick({
+                dots: true, // Shfaq pikat e navigimit
+                arrows: true, // Shfaq butonat e navigimit (mëparshëm/mëpasëm)
+                autoplay: true, // Aktivizo rrokullisjen automatike
+                autoplaySpeed: 3000 // Shpejtësia e rrokullisjes automatike në milidetaj
+            });
+        });
+    </script>
 </body>
 </html>
