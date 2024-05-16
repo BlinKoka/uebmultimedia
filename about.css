@@ -1,0 +1,140 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color: #bc9667;
+    --second-color: #edeae3;
+    --text-color: #1b1b1b;
+    --bg-color: #fff;
+}
+img{
+    width: 100% ;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+
+}
+.logo {
+    color: rgb(182, 94, 0);
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    padding: 10px 0;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    padding: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover{
+    background: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+.header-icon{
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header-icon .bx{
+    color: var(--bg-color);
+}
+.header-icon .bx:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+.search-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--bg-color);
+    width: 100%;
+}
+.search-box.active{
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s all linear;
+}
+.search-box input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    border-radius: 0.5rem;
+}
+.about-text h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem;
+    color: wheat;
+}
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-color: var(--main-color); /* Use background-color instead of background-position */
+    color: var(--bg-color);
+    font-weight: 500;
+    text-decoration: none; /* Ensure button text is not underlined */
+    display: inline-block; /* Make button behave as an inline block */
+    margin-top: 1.5rem; /* Add top margin to create space between button and paragraphs */
+}
+
+.btn:hover {
+    background-color: #8a6f4d; /* Change background color on hover */
+}
