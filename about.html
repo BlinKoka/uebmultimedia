@@ -30,29 +30,30 @@
             <input type="search" name="" id="" placeholder="Search Here">
         </div>
     </header>
-    <div class="about-slider">
-        <div><img src="img/a1.jpg" alt=""></div>
-        <div><img src="img/a2.jpg" alt=""></div>
-        <div><img src="img/a3.jpg" alt=""></div>
-        <!-- Shtoni më shumë imazhe sipas nevojës -->
-    </div>
-    
-    <div class="about-text">
-        <h2>Our History</h2>
-        <p>Our story at B-Coffee began over a decade ago, rooted in a shared passion for exceptional coffee. What started as a humble coffee roasting venture in a small garage has evolved into a beloved brand known for its commitment to quality and innovation.</p>
-        <p>From the outset, our mission has been clear: to source the finest beans from around the world and meticulously roast them to perfection. As we expanded, so did our dedication to sustainability and ethical practices, ensuring every step of our coffee-making process reflects our values. </p>
-        <p>Today, B-Coffee stands as a testament to our enduring journey, marked by a deep-seated love for coffee and a desire to share it with others. Join us as we continue to write the next chapters of our story, one exceptional brew at a time.        </p>
-        <a href="#" class="btn">Learn More</a>
+    <div class="about-container">
+        <div class="about-slider">
+            <div><img src="img/a1.jpg" alt=""></div>
+            <div><img src="img/a2.jpg" alt=""></div>
+            <div><img src="img/a3.jpg" alt=""></div>
+        </div>
+        
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>Our story at B-Coffee began over a decade ago, rooted in a shared passion for exceptional coffee. What started as a humble coffee roasting venture in a small garage has evolved into a beloved brand known for its commitment to quality and innovation.</p>
+            <p>From the outset, our mission has been clear: to source the finest beans from around the world and meticulously roast them to perfection. As we expanded, so did our dedication to sustainability and ethical practices, ensuring every step of our coffee-making process reflects our values. </p>
+            <p>Today, B-Coffee stands as a testament to our enduring journey, marked by a deep-seated love for coffee and a desire to share it with others. Join us as we continue to write the next chapters of our story, one exceptional brew at a time.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.about-slider').slick({
-                dots: true, // Shfaq pikat e navigimit
-                arrows: true, // Shfaq butonat e navigimit (mëparshëm/mëpasëm)
-                autoplay: true, // Aktivizo rrokullisjen automatike
-                autoplaySpeed: 3000 // Shpejtësia e rrokullisjes automatike në milidetaj
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000
             });
         });
     </script>

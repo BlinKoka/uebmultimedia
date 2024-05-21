@@ -1,6 +1,7 @@
-/*Google fonts*/
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&display=swap');
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,16 +11,19 @@
     list-style: none;
     text-decoration: none;
 }
-:root{
+
+:root {
     --main-color: #bc9667;
     --second-color: #edeae3;
     --text-color: #1b1b1b;
     --bg-color: #fff;
 }
-img{
-    width: 100% ;
+
+img {
+    width: 100%;
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,50 +35,58 @@ header{
     padding: 18px 100px;
     transition: 0.5s linear;
     background: var(--text-color);
-
 }
+
 .logo {
     color: rgb(182, 94, 0);
     font-size: 30px;
     font-family: 'Times New Roman';
     padding: 10px 0;
 }
-.navbar{
+
+.navbar {
     display: flex;
 }
-.navbar a{
+
+.navbar a {
     padding: 8px 17px;
     color: var(--bg-color);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     background: var(--main-color);
     border-radius: 0.2rem;
     transition: 0.2s all linear;
 }
-.header-icon{
+
+.header-icon {
     font-size: 22px;
     cursor: pointer;
     z-index: 10000;
     display: flex;
     column-gap: 0.8rem;
 }
-.header-icon .bx{
+
+.header-icon .bx {
     color: var(--bg-color);
 }
-.header-icon .bx:hover{
+
+.header-icon .bx:hover {
     color: var(--main-color);
 }
-#menu-icon{
+
+#menu-icon {
     color: var(--bg-color);
     font-size: 24px;
     z-index: 100001;
     cursor: pointer;
     display: none;
 }
-.search-box{
+
+.search-box {
     position: absolute;
     top: -100%;
     left: 50%;
@@ -82,12 +94,14 @@ header{
     background: var(--bg-color);
     width: 100%;
 }
-.search-box.active{
+
+.search-box.active {
     top: 110%;
     box-shadow: var(--box-shadow);
     transition: 0.2s all linear;
 }
-.search-box input{
+
+.search-box input {
     padding: 20px;
     border: none;
     outline: none;
@@ -95,35 +109,55 @@ header{
     font-size: 1rem;
     color: var(--main-color);
 }
-.search-box input::placeholder{
+
+.search-box input::placeholder {
     font-size: 1rem;
     font-weight: 500;
 }
-body{
+
+body {
     width: 100%;
     min-height: 100vh;
     background: url(img/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
-    align-items: center;
-    gap: 1.5rem;
 }
-.about-slider img{
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.about-slider {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.about-slider img {
     border-radius: 1.0rem;
 }
-.about-text h2{
+
+.about-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-text h2 {
     font-size: 1.8rem;
     text-transform: uppercase;
     color: var(--main-color);
 }
-.about-text p{
+
+.about-text p {
     font-size: 0.938rem;
     margin: 0.5rem;
     color: wheat;
 }
+
 .btn {
     padding: 10px 40px;
     border-radius: 0.3rem;
