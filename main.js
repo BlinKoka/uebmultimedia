@@ -34,4 +34,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const textElement = document.querySelector('.home-text h1');
 
     typeEffect(textElement, 100); 
+
+    
+});
+document.addEventListener("DOMContentLoaded", function() {
+
+    const aboutSlider = document.querySelector('.about-slider');
+    if (aboutSlider) {
+        $('.about-slider').slick({
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
+    }
 });
