@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #bc9667;
+    --second-color: #edeae3;
+    --text-color: #1b1b1b;
+    --bg-color: #fff;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+
+.logo {
+    color: rgb(182, 94, 0);
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.header-icon .bx {
+    color: var(--bg-color);
+}
+
+.header-icon .bx:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    color: var(--bg-color);
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.search-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--bg-color);
+    width: 100%;
+}
+
+.search-box.active {
+    top: 110%;
+    transition: 0.2s all linear;
+}
+
+.search-box input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.search-box input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.heading {
+    text-align: center;
+    padding-top: 100px; /* Adjust to move the content below the fixed header */
+}
+
+.heading h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.customers-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.customers-container .box{
+    padding: 20px;
+    background: rgb(193, 169, 124);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.stars .bx{
+    color: var(--main-color);
+}
+.customers-container .box p{
+    font-size: 0.938rem;
+}
+.customers-container .box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.customers-container .box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customers-container .box:hover{
+    background: var(--second-color);
+    transition: 0.2s all linear;
+}
