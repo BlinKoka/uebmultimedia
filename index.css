@@ -1,6 +1,7 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,700&display=swap');
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,16 +11,30 @@
     list-style: none;
     text-decoration: none;
 }
-:root{
+
+:root {
     --main-color: #bc9667;
     --second-color: #edeae3;
     --text-color: #1b1b1b;
     --bg-color: #fff;
 }
-img{
-    width: 100% ;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
-header{
+
+body {
+    width: 100%;
+    min-height: 137vh;
+    background: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,50 +46,58 @@ header{
     padding: 18px 100px;
     transition: 0.5s linear;
     background: var(--text-color);
-
 }
+
 .logo {
     color: rgb(182, 94, 0);
     font-size: 30px;
     font-family: 'Times New Roman';
     padding: 10px 0;
 }
-.navbar{
+
+.navbar {
     display: flex;
 }
-.navbar a{
+
+.navbar a {
     padding: 8px 17px;
     color: var(--bg-color);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     background: var(--main-color);
     border-radius: 0.2rem;
     transition: 0.2s all linear;
 }
-.header-icon{
+
+.header-icon {
     font-size: 22px;
     cursor: pointer;
     z-index: 10000;
     display: flex;
     column-gap: 0.8rem;
 }
-.header-icon .bx{
+
+.header-icon .bx {
     color: var(--bg-color);
 }
-.header-icon .bx:hover{
+
+.header-icon .bx:hover {
     color: var(--main-color);
 }
-#menu-icon{
+
+#menu-icon {
     color: var(--bg-color);
     font-size: 24px;
     z-index: 100001;
     cursor: pointer;
     display: none;
 }
-.search-box{
+
+.search-box {
     position: absolute;
     top: -100%;
     left: 50%;
@@ -82,12 +105,14 @@ header{
     background: var(--bg-color);
     width: 100%;
 }
-.search-box.active{
+
+.search-box.active {
     top: 110%;
     box-shadow: var(--box-shadow);
     transition: 0.2s all linear;
 }
-.search-box input{
+
+.search-box input {
     padding: 20px;
     border: none;
     outline: none;
@@ -95,26 +120,25 @@ header{
     font-size: 1rem;
     color: var(--main-color);
 }
-.search-box input::placeholder{
+
+.search-box input::placeholder {
     font-size: 1rem;
     font-weight: 500;
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    background: url(img/bg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+main {
+    flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
     align-items: center;
     gap: 1.5rem;
 }
+
 .home-text {
     padding-left: 15%; 
     text-align: left; 
 }
+
 .home-text h1 {
     font-size: 3.4rem;
     color: var(--main-color);
@@ -122,6 +146,7 @@ body{
     letter-spacing: 1px;
     margin-bottom: 1rem;
 }
+
 .home-text p {
     font-size: 0.938rem;
     color: var(--bg-color);
@@ -158,3 +183,74 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    background-color: wheat; /* Ensure the footer has a background to be visible */
+    padding: 20px;
+}
+
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.social a .bx {
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 0.2rem;
+}
+
+.social a .bx:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: var(--text-color);
+}
+
+.footer-box li a:hover {
+    color: var(--main-color);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: wheat;
+}
