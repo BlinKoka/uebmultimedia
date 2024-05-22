@@ -29,7 +29,7 @@ html, body {
 body {
     width: 100%;
     min-height: 137vh;
-    background: url(img/bg2.png);
+    background: url(../img/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -253,4 +253,43 @@ footer {
     padding: 20px;
     text-align: center;
     background: wheat;
+}
+
+@media(max-width: 1058px){
+    header{
+        padding: 16px 60px;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+}
+@media(max-width: 991px){
+    header{
+        padding: 16px 4%;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 991px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: wheat;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--second-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        transition: 0.3s;
+        text-align: center;
+    }
 }
