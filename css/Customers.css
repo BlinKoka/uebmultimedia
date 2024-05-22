@@ -159,3 +159,33 @@ header {
     background: var(--second-color);
     transition: 0.2s all linear;
 }
+.videos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.videos-container h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.video {
+    margin-bottom: 30px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.video p {
+    font-size: 1rem;
+    color: var(--main-color);
+    margin-top: 10px;
+}
