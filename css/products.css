@@ -20,10 +20,8 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh;
     background: url(../img/bg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
 }
 
@@ -189,11 +187,14 @@ header {
 #pixi-slider {
     margin: 20px auto;
     text-align: center;
+    position: relative; /* Ensure buttons can be positioned relative to this container */
+    width: 800px; /* Match the width of the PIXI canvas */
+    height: 500px; /* Match the height of the PIXI canvas */
 }
 
 #pixi-slider canvas {
     border: 2px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #pixi-slider .button {
@@ -203,8 +204,26 @@ header {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s; /* Smooth transition for button background color */
+}
+
+#pixi-slider .button:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darken button background on hover */
+}
+
+#pixi-images img {
+    width: 100%; /* Set the width to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container height */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for image opacity */
+}
+
+#pixi-images img:hover {
+    opacity: 0.8; /* Reduce opacity of images on hover */
 }
 
 #pixi-slider .button.next {
