@@ -110,7 +110,7 @@ header {
     color: var(--main-color);
 }
 
-.search-box input::placeholder {
+search-box input::placeholder {
     font-size: 1rem;
     font-weight: 500;
 }
@@ -172,3 +172,4 @@ body {
 .btn:hover {
     background-color: #8a6f4d; 
 }
+

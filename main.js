@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             autoplaySpeed: 3000
         });
     }
+    
 });
 
 
